@@ -95,19 +95,21 @@ section {
 
 }
 
-.left-data-div h1 {
+.left-data-div h1 span#temp {
     font-size: 7rem;
-    font-weight: lighter;
+    font-weight: 200;
     position: relative;
 }
 
 .left-data-div h1 sup {
     font-size: 3rem;
     position: absolute;
+    font-weight: 200;
     transform: translateY(0);
 }
 .left-data-div h1 span {
     font-size: 3.5rem;
+    font-weight: 200;
     margin-left: 2.5rem;
 }
 
