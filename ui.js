@@ -1,5 +1,6 @@
 class UI {
     setResult(q, val) {
+        q.innerHTML = '';
         q.appendChild(document.createTextNode(val));
     }
     setDate(q) {
