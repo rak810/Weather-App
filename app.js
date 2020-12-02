@@ -45,7 +45,7 @@ function getWeather(lat, long) {
       console.log(err);
     }
     else {
-      temp.insertBefore(document.createTextNode(res.current.temp), temp.children[0]);
+      ui.setResult(temp, res.current.temp);
       ui.setResult(pres, `${res.current.pressure} Pa`);
       ui.setResult(dew, `${res.current.dew_point} C`);
       ui.setResult(wind, `${res.current.wind_speed} Km/h`);
