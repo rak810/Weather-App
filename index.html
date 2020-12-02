@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="weather-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <section>
+        <div class="left-div">
+            <div class="left-input-div">
+                <input type="text" placeholder="Search" id="input">
+            </div>
+            <div class="left-data-div">
+                <p id="date"></p>
+                <h1 id="temp"><sup>o</sup><span>c</span></h1>
+                <div>
+                    <p id="location"></p>
+                    <p id="description"></p>
+                </div>
+            </div>
+        </div>
+        <div class="right-div">
+            <div>           
+                 <h3>Statistics</h3>
+                <hr>
+            </div>
+            <div class="right-detail-div">
+                <div>
+                    <span><i class="wi wi-humidity"></i></span>
+                    <p id="humidity"></p>
+                </div>
+                <div>
+                    <span><i class="fas fa-wind"></i></span>
+                    <p id="wind"></p>
+                </div>
+                <div>
+                    <span><i class="wi wi-barometer"></i></span>
+                    <p id="pressure"></p>
+                </div>
+                <div>
+                    <span><i class="wi wi-raindrop"></i></span>
+                    <p id="dew"></p>
+                </div>
+            </div>
+            <div>
+                <p>
+                    <span>Today</span>
+                    <span>Week</span>
+                    <span>Month</span>
+                </p>
+                <table>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+    <script src="easy-http.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
